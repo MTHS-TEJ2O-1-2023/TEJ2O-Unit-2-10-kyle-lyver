@@ -22,10 +22,10 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function () {
   lightvalue = input.lightLevel()
   if (lightvalue <= 51) {
-    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black)) 
+    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
   }
 
-    if (lightvalue >= 52) {
+  if (lightvalue >= 52) {
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Purple))
     neopixelStrip.show()
   }
